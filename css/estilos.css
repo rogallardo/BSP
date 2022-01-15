@@ -21,7 +21,7 @@ a {
 }
 
 .contenedor {
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(236, 236, 236);
 	width: 100%;
 	margin: auto;
 	display: grid;
@@ -106,7 +106,7 @@ a {
 .articulo {
 	display: flex;
 	background: #fff;
-	border: solid 1px black;
+	border: solid 1px rgb(175, 175, 175);
 }
 
 .articulo .contenedor-texto {
@@ -213,6 +213,7 @@ a {
 	grid-area: aside;
 	background: #000;
 	color: #868b8d;
+	text-decoration: none;
 }
 
 .img-reseñas {
@@ -229,6 +230,7 @@ a {
 	flex-direction: column;
 	background: rgb(0, 0, 0);
 	justify-items: flex-end;
+	margin-top: 50px;
 
 }
 
@@ -241,12 +243,20 @@ a {
 	text-transform: uppercase;
 	justify-content: center;
 	transition: 0.5s;
+	text-decoration: none;
 }
 
 .sidebar .menu-sidebar a:hover {
 	background: #262626;
 }
-
+.res1{
+	font-size: 14px;
+	margin-top: 20px;
+}
+.res2{
+	font-size: 14px;
+	margin-top: 20px;
+}
 /*---------- FOOTER ----------*/
 .footer {
 	background: rgb(0, 0, 0);
@@ -275,6 +285,7 @@ span {
 .btn-redes img{
 	height: 20px;
 	width: 20px;
+	margin:10px;
 	transition: 0.2s ease-in-out;
 
 	
@@ -288,7 +299,7 @@ span {
 
 /* -----------------------------------------PRODUCTOS------------------------------------------ */
 .grid-container-productos{
-	background-color: white;
+	background-color: rgb(236, 236, 236);
 	display: grid;
 	grid-gap: 20px;
 	grid-template-columns: repeat(3, 1fr);
@@ -431,7 +442,7 @@ span {
 }
 /* -------------------------------------------CONTACTO---------------------------------------- */
 .contenedor-contacto{
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(236, 236, 236);
 	width: 100vw;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -449,6 +460,20 @@ span {
 	background-color: black;
 	display: grid;
 	grid-area: form-container;
+}
+.titulo-contacto{
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.titulo-termycond{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.boton-enviar{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
 }
 /* -------------------------------------------GALERIA----------------------------------------- */
 .grid-container-galeria{
@@ -478,7 +503,7 @@ span {
 	font-size: 18px;
 	line-height: 25px;
 	height: fit-content;
-	gap: 20px;
+	gap: 10px;
 	margin-left: 2%;
 	margin-right: 2%;
 	grid-template-areas:
@@ -493,6 +518,7 @@ span {
 .item{
 	min-height: 300px;
 	min-width: 300px;
+	border-radius: 10px;
 	/* transition: transform 0.7s ease-in-out; */
 }
 
@@ -573,15 +599,19 @@ span {
 }
 
 .cards-container{
-	margin-top: 80px;
-	display: grid;
-	width: 98.8vw;
-	height: 100%;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: fit-content;
 	grid-area: cards-container;
 	background-color: rgb(58, 58, 58);
+	align-items: center;
 }
+
 .card-text{
 	font-size: 20px;
+	justify-content: center;
+	text-align: center;
 }
 .spanbody{
 	color: rgb(83, 83, 83);
@@ -598,7 +628,7 @@ span {
 	}
 
 	.contenedor {
-		background-color: rgb(255, 255, 255);
+		background-color: rgb(236, 236, 236);
 		width: 100%;
 		margin: auto;
 		display: grid;
@@ -633,7 +663,7 @@ span {
 	
 	}
 	.mobile-menu{
-		z-index: 2 !important;
+		z-index: 1 !important;
 	}
 	.nav-item{
 		letter-spacing: 0px;
@@ -682,14 +712,14 @@ span {
 	.destacado .titulo::after {
 		content: '';
 		display: flex;
-		background-color: rgb(78, 78, 78);
+		background-color: rgb(128, 126, 126);
 		width: fit-content;
 		
 	}
 	.articulo.destacado {
 		grid-area: destacado;
 		color: white;
-		background-color: rgb(48, 48, 48);
+		background-color: rgb(78, 78, 78);
 		display: flex;
 		flex-direction: column;
 		font-size: 12px;
@@ -729,6 +759,7 @@ span {
 .productos-container{
 	width: 100vw;
 	justify-items: center;
+	background-color: rgb(236, 236, 236);
 	color: white;
 	display: grid;
 	grid-template-columns: 1.5fr;
@@ -770,7 +801,7 @@ span {
 }
 /* -------------------------------------------CONTACTO---------------------------------------- */
 .contenedor-contacto{
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(236, 236, 236);
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -785,9 +816,12 @@ span {
 	margin-top: 60px;
 	height: fit-content;
 	width: 100%;
-	background-color: black;
+	background-color: rgb(112, 112, 112);
 	display: grid;
 	grid-area: form-container;
+}
+.boton-enviar{
+	margin-bottom: 20px;
 }
 /* --------------------------------------------GALERIA-------------------------------------------- */
 .grid-container-galeria{
@@ -916,16 +950,19 @@ span {
 	width: 100%;
 
 }
+.footer-text{
+	border-bottom: solid 1px grey;
+}
 
 span {
 	color: rgb(108, 175, 153);
 }
 .btn-redes-container{
-	background-size: cover;
 	height: 20px;
-	width: 100px;
+	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	
 	
 
 	
@@ -972,7 +1009,7 @@ span {
 .articulo.destacado {
 	grid-area: destacado;
 	color: white;
-	background-color: rgb(43, 43, 43);
+	background-color: rgb(78, 78, 78);
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	font-size: 18px;
@@ -1069,6 +1106,12 @@ span {
 	display: grid;
 	grid-area: form-container;
 }
+.selector-sexo{
+	margin-bottom: 20px;
+}
+.boton-enviar{
+	margin-bottom: 20px;
+}
 /* -------------------------------------------GALERIA----------------------------------------- */
 .grid-container-galeria{
 	background-color: white;
@@ -1097,7 +1140,7 @@ span {
 	font-size: 18px;
 	line-height: 25px;
 	height: fit-content;
-	gap: 20px;
+	gap: 10px;
 	margin-top: 90px;
 	margin-left: 2%;
 	margin-right: 2%;
@@ -1191,7 +1234,13 @@ span {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+	flex-direction: row;
 
+}
+.footer-text{
+	width: 50%;
+	border-bottom: none;
+	border-right:solid 1px gray;
 }
 
 span {
